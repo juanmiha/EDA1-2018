@@ -1,0 +1,21 @@
+%El formato es, exactamente, el mismo que el del archivo datos1.
+
+@Devices
+Device iPhone_X with code 0110011110
+Device iPad_Air with code 1110110011
+Device Samsung_Galaxy with code 0000000000
+Device Razer_Phone with code 0001110001
+Device Lenovo_Tab4 with code 1010101010
+Device Lava_A72 with code 0110011111
+Device Xiaomi_Mi with code 1110110011
+Device Xiaomi_RedMi5 with code 0000010000
+Device Zopo_Z5000 with code 0001001100
+Device Lenovo_Tab10 with code 0101101101
+
+@Users
+Pepe -> Samsung_Galaxy
+Juan -> iPad_Air
+Alberto -> iPhone_X
+Maria -> Razer_Phone 
+Anabel -> Zopo_Z5000
+

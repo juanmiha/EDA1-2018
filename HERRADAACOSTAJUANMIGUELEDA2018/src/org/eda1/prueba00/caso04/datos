@@ -1,0 +1,39 @@
+%Esto seria un ejemplo de archivo de datos de entrada. Todo lo que comienza con el símbolo % se asume como comentario y se ignora en el proceso de carga
+%El archivo se compone de dos secciones: personajes y datos. El inicio de cada sección se indica con el carácter @: @personajes y @datos
+
+%En la seccion @personajes se describen los personajes que debemos gestionar en nuestra aplicacion
+%Para cada personaje guardaremos los datos: nick, nombre, apellido, edad (si se desconoce aparecera el caracter ?) y sexo (f o m).
+%El nick de cada personaje sera un valor unico y lo utilizaremos como clave en el almacenamiento de la estructura de datos (orden natural). 
+%En caso de querer especificar mas de un apellido, se hara uniendolos con el simbolo _ (p.e. Pepa Lopez_Segura). 
+
+%La seccion @datos especifica los items en los que cada personaje ha participado: p (pelicula), l (libro) y d (disco). 
+%La identificacion de cada personaje en la seccion @datos se hara mediante su atributo nick --> campo clave
+
+%Comenzamos con la descripcion de la seccion @personajes
+
+@personajes
+j34 Juan Aguilera m 34
+m84 Maria Sanchez f 84
+a34 Antonio Sanchez_Saez m 34
+loca203 Juana LaLoca f 203
+a0 Amalia Lopez f ?
+fsegura Francisco Segura m 56
+j34 Amancio Perez m 67
+
+%Y, a continuacion, los datos asociados a cada uno de los distintos personajes...
+%En cada fila se indica el nick del personaje y una lista de items, cuyos valores son: l, p o d. Cualquier otro caracter sera ignorado.
+%Si el nick no existe, se ignora la fila completa
+
+@datos   
+j34 l l p d d l p   p p p d l l a z l l l l p
+m84 d d d d d d d d d d d d d d d d d d d d d  d d d d d d d
+m84 l l l l l p p p p p p p p p d d p d p p p p p p p
+m84 x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x
+a34 d p d p d p d p d p d p d p d p d p d p d p d p
+loca203 p p p p p p
+a0 x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x
+fsegura d d d d p p p p l l l l l l l l l l l l l l l l l l l l l l l l l l l 
+fsegura l l l l l l l l l l l l l l l l 
+jgil d d d d p p p p p p p l l l l l l p p p p p p p p p  l l l l l l l l l d d d d
+
+%Y ya con esto termina la especificacion del archivo de entrada. 

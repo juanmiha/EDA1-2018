@@ -1,0 +1,45 @@
+package org.eda1.prueba00.caso03;
+
+import java.util.ArrayList;
+
+import org.eda1.edaAuxiliar.AVLTree;
+
+
+public class Maquina implements Comparable<Maquina>{
+	private String nombre;
+	private AVLTree<IpMaquina> ips;
+	
+	public Maquina (String nombre){
+		//...
+	}
+	
+	public void add(String ip){
+		//...
+	}
+	
+	public ArrayList<IpMaquina> toArray(){
+		//...
+	}
+	
+	public boolean contains(String ip){
+		//...
+	}
+	
+	public String getNombre(){
+		return this.nombre;
+	}
+	
+	public int getNumIps(){
+		//...
+	}
+	
+	@Override
+	public String toString(){
+		return this.nombre + " --> " + this.ips.toString();
+	}
+	
+	@Override
+	public int compareTo(Maquina otro){
+		return this.nombre.compareTo(otro.nombre);
+	}
+}

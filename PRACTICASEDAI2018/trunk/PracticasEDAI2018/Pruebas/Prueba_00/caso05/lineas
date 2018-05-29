@@ -1,0 +1,37 @@
+%Ejemplo de conjunto de datos. Se compone de tres secciones: conjunto de estaciones; conjunto de lineas y datos adicionales asociados a las estaciones
+%Los caracteres E (de Estacion) y L (de linea) son puramente informativos...redundantes en la gestion interna de estos datos.
+%Para mas detalles, vease el Test proporcionado... 
+
+%Listado de un subconjunto de estaciones de metro de Madrid
+@Estaciones 
+
+E1 Moncloa
+E2 Arguelles
+E03 Principe
+E4 Lucia
+E5 Goya
+E6 Ibiza
+E007 Elipa
+E8 Capricho
+E9 Aravaca
+
+
+   %Lineas de metro...se especifica el numero de estaciones que compone cada linea
+ @Lineas
+L1 --> E1 E3 E4 E6 E9
+L2 --> E01 E05 E05 E08
+L3 --> E00004 E7 E9 
+L4 --> E2 E4 E06 
+L05 --> E1 E03
+
+             @DatosEstaciones
+%Datos adicionales asociados a cada estacion (calle y m2 de superficie) 
+E1 --> Sotomallor 200 
+E2 --> Santaella 500
+E3 --> Caracol 2342
+E4 --> Sol 1560
+E5 --> Capitan 2.343
+E006 --> GranVia 2.333
+E7 --> Soledad 2004
+E8 --> Beatas 323
+E9 --> Gaviota 23

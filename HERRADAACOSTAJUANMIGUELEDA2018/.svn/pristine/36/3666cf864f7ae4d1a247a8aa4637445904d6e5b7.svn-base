@@ -1,0 +1,124 @@
+$Insert
+Error: The command should be followed by a blank space, 
+followed by an integer, followed by a blank space, followed by an integer.
+
+You can fool
+Error: a command should start with $.
+
+all the people
+Error: a command should start with $.
+
+some of the time,
+Error: a command should start with $.
+
+and some of the people
+Error: a command should start with $.
+
+all the time,
+Error: a command should start with $.
+
+but you cannot fool
+Error: a command should start with $.
+
+all the people
+Error: a command should start with $.
+
+all the time.
+Error: a command should start with $.
+
+$Line 2
+Error: not one of the given commands.
+
+$GetLines 2 1
+Error: not one of the given commands.
+
+$ GetLines 2 2
+Error: not one of the given commands.
+
+$GetLines 2 2
+Error: not one of the given commands.
+
+$GetLines 2 2
+Error: not one of the given commands.
+
+$GetLines 2 2
+Error: not one of the given commands.
+
+$Line 0
+Error: not one of the given commands.
+
+$Insert
+Error: The command should be followed by a blank space, 
+followed by an integer, followed by a blank space, followed by an integer.
+
+Lincoln once said that
+Error: a command should start with $.
+
+you can fool
+Error: a command should start with $.
+
+...
+Error: a command should start with $.
+
+all the time.
+Error: a command should start with $.
+
+$Line 8
+Error: not one of the given commands.
+
+$Insert
+Error: The command should be followed by a blank space, 
+followed by an integer, followed by a blank space, followed by an integer.
+
+some of the people
+Error: a command should start with $.
+
+$Last
+Error: not one of the given commands.
+
+$GetLines 0 10
+Error: not one of the given commands.
+
+$Line 5
+Error: not one of the given commands.
+
+$GetLines 5 5
+Error: not one of the given commands.
+
+$Line 6
+Error: not one of the given commands.
+
+$GetLines 6 6
+Error: not one of the given commands.
+
+$Line 8
+Error: not one of the given commands.
+
+$GetLines 8 8
+Error: not one of the given commands.
+
+$Line 9
+Error: not one of the given commands.
+
+$GetLines 9 9
+Error: not one of the given commands.
+
+$Delete 3 3
+Error: not one of the given commands.
+
+$GetLines 0 10
+Error: not one of the given commands.
+
+$Last
+Error: not one of the given commands.
+
+$GetLines 0 9
+Error: not one of the given commands.
+
+$Done
+Error: The command should be followed by a blank space, 
+followed by an integer, followed by a blank space, followed by an integer.
+
+***********************
+Here is the final text:
+

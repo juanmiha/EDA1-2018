@@ -1,0 +1,27 @@
+%Listado de usuarios.
+@Usuarios
+
+Alex
+Dani
+Juanjo
+Kike
+Sergio
+Alex
+Manuel
+
+
+   %Listado de Dispositivos
+ @Dispositivos
+Alex;Movil;00000
+Alex;PC;00001
+Alex;Tablet;00010
+Dani;PS3;00011
+Juanjo;PS4;00100
+	Juanjo;PC;00101
+Kike;Mac;00110
+Sergio;iPhone;00111
+Sergio;Tablet;01000
+			Alex;PC;01001
+Manuel;PS3;01010
+Manuel;Xbox360;01011
+Manuel;XboxONE;01100

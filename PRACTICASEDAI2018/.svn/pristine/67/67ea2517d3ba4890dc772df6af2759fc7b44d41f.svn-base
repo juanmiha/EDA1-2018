@@ -1,0 +1,54 @@
+package org.eda1.prueba00.caso03;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.Scanner;
+
+import org.eda1.edaAuxiliar.AVLTree;
+
+public class GestionMaquina {
+	private AVLTree<Maquina> arbol = new AVLTree<Maquina>();
+	
+	public void load(String nombreArchivo){
+		Scanner archivo = null;
+		String linea;
+		String[] palabrasLinea;
+		this.arbol.clear();
+	
+		try{
+			archivo = new Scanner(new File(nombreArchivo));
+			
+			while (archivo.hasNextLine()){
+				//...
+			}
+			archivo.close();
+		}catch (FileNotFoundException expt){
+			System.out.println("ERROR AL CARGAR EL ARCHIVO");
+			System.exit(-1);
+		}
+
+	}
+		
+	public void add(String maquina, String ip){
+		//...
+	}
+	
+	public int size(){
+		return this.arbol.size();
+	}
+	
+	public ArrayList<String> maquinasConIp(String ip){
+		//...
+	}
+
+	public ArrayList<Maquina> toArrayWithOrder(Comparator<Maquina> comp){
+		//...
+	}
+	
+	@Override
+	public String toString(){
+		return this.arbol.toString();
+	}
+}

@@ -1,0 +1,34 @@
+% Este archivo de entrada se estructura en dos secciones: @Devices y @Users
+
+% En la seccion @Devices se muestra el listado de dispositivos. Cada linea tiene el formato "Device <<marca>> with code <<codeDevice>>". 
+% El atributo <<marca>> es un identificador local (que solo tendremos en cuenta en la carga del archivo) y <<codeDevice>> es un codigo binario que representa las 10 caracteristicas 
+% principales del dispositivo (ver clase Device).
+% Por simplificacion, asumimos que en el codigo se representa la presencia o ausencia de una caracteristica determinada con un digito binario (1 presente, 0 ausente).
+% Determinaremos el grado de similitud de dos dispositivos segun el numero de caracteristicas comunes que posean.
+%
+%
+ 
+@Devices
+Device iPhone_X with code 0110011110
+Device iPad_Air with code 1100110011
+Device Samsung_Galaxy with code 1111111111
+Device Razer_Phone with code 0001110001
+Device Lenovo_Tab4 with code 1010101010
+Device Lava_A72 with code 0110011001
+Device Xiaomi_Mi with code 1100110011
+Device Xiaomi_RedMi5 with code 0000010000
+Device Zopo_Z5000 with code 0001000100
+Device Lenovo_Tab10 with code 1101101101
+
+@Users
+% En la seccion usuarios, cada entrada tendra el formato <<nU>> -> <<d_1 d_2 ... d_n>>,
+% donde <<nU>> representa el nombre del usuario y <<d_1 d_2 ... d_n>> representa la lista de dispositivos asociados a dicho usuario. 
+% Cada <<d_i>> corresponde con el nombre de dispositivo especifiado en la seccion @Devices. Si el nombre no existe, se ignora.
+% La determinacion del peso (relacion) entre dos usuarios se determina a partir del numero total de caraceristicas que tienen en comun el conjunto de dispositivos que poseen.
+% Tened en cuenta que dos usuarios pueden compartir el mismo dispositivo. Este hecho se ignorara en el computo del grado de relacion entre los usuarios.
+
+Pepe -> iPhone_X iPad_Air Lenovo_Tab4 Xiaomi_Mi Xiaomi_RedMi5 iPhone_X
+Juan -> iPad_Air Samsung_Galaxy Razer_Phone Zopo_Z5000 Lenovo_Tab10
+Alberto -> Samsung_Galaxy Razer_Phone Lava_A72 Xiaomi_RedMi5 Lenovo_Tab10
+Maria -> iPhone_X iPad_Air Samsung_Galaxy Razer_Phone d55 Lava_A72 Xiaomi_Mi Xiaomi_RedMi5
+Anabel -> Samsung_Galaxy Lenovo_Tab4 Xiaomi_Mi Zopo_Z5000

@@ -1,0 +1,90 @@
+$Insert
+Error: The command should be followed by a blank space, 
+followed by an integer, followed by a blank space, followed by an integer.
+
+a
+Error: a command should start with $.
+
+
+Error: a command should start with $.
+
+b
+Error: a command should start with $.
+
+c
+Error: a command should start with $.
+
+d
+Error: a command should start with $.
+
+e
+Error: a command should start with $.
+
+f
+Error: a command should start with $.
+
+$li
+Error: not one of the given commands.
+
+$Delete 3 8
+Error: not one of the given commands.
+
+$Insert
+Error: The command should be followed by a blank space, 
+followed by an integer, followed by a blank space, followed by an integer.
+
+h
+Error: a command should start with $.
+
+i
+Error: a command should start with $.
+
+$Line x
+Error: not one of the given commands.
+
+$Line 2
+Error: not one of the given commands.
+
+$Insert
+Error: The command should be followed by a blank space, 
+followed by an integer, followed by a blank space, followed by an integer.
+
+x
+Error: a command should start with $.
+
+y
+Error: a command should start with $.
+
+$Delete
+Error: The command should be followed by a blank space, 
+followed by an integer, followed by a blank space, followed by an integer.
+
+$Delete 3 x
+Error: not one of the given commands.
+
+$Delete 3 22
+Error: not one of the given commands.
+
+$Delete 3 5
+Error: not one of the given commands.
+
+$Insert
+Error: The command should be followed by a blank space, 
+followed by an integer, followed by a blank space, followed by an integer.
+
+u
+Error: a command should start with $.
+
+v
+Error: a command should start with $.
+
+$Last
+Error: not one of the given commands.
+
+$Done
+Error: The command should be followed by a blank space, 
+followed by an integer, followed by a blank space, followed by an integer.
+
+***********************
+Here is the final text:
+
